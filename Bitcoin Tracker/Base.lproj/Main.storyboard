@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bitcoin_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tim-mossholder-244857" translatesAutoresizingMaskIntoConstraints="NO" id="8wn-2B-3mb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OC-Qf-Kbn">
+                                <rect key="frame" x="133" y="304" width="109" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kmm-mw-1Jn">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                            </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="CX9-zk-mHF">
+                                <rect key="frame" x="0.0" y="91" width="375" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kmm-mw-1Jn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Hg2-75-dB7"/>
+                            <constraint firstItem="Kmm-mw-1Jn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IcG-Ec-tU3"/>
+                            <constraint firstItem="8wn-2B-3mb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Tg9-5l-keo"/>
+                            <constraint firstItem="Kmm-mw-1Jn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cmk-un-OEp"/>
+                            <constraint firstItem="8wn-2B-3mb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dtQ-ud-f0D"/>
+                            <constraint firstItem="8wn-2B-3mb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j7T-CW-1dO"/>
+                            <constraint firstItem="1OC-Qf-Kbn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jqS-TP-ANq"/>
+                            <constraint firstItem="8wn-2B-3mb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="s5x-Zr-DID"/>
+                            <constraint firstItem="1OC-Qf-Kbn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uN8-Wb-DhC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bitcoinPriceLabel" destination="1OC-Qf-Kbn" id="rvl-ao-FSd"/>
+                        <outlet property="currencyPicker" destination="Kmm-mw-1Jn" id="mHt-Jg-Dh0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bitcoin" width="335" height="335"/>
+        <image name="tim-mossholder-244857" width="7200" height="4800"/>
+    </resources>
+</document>
